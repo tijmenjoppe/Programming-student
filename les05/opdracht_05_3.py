@@ -12,7 +12,7 @@ import hashlib
 
 
 def test_lang_genoeg():
-    res1 = "be6791b23c2513000c2b281cc41a5cbe"
+    res1 = "0ca9ddb266e1f9e2bdb7976fd347ab07"
     res2 = "1fc6e9419705055a33b1f8044ce93171"
 
     assert hashlib.md5(lang_genoeg(100).encode()).hexdigest() == res1, "Fout: de functie lang_genoeg() geeft niet het juiste bericht bij 100cm."
