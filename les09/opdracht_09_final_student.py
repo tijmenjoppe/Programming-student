@@ -3,7 +3,7 @@ def geef_rangnummer(stations, station):
     Geeft het rangnummer (positie) van het station op een traject van stations.
 
     Argumenten:
-    stations -- de stationsnamen die samen een treintraject vormen (list of str)
+    stations -- de stationsnamen die samen een treintraject vormen (list van str)
     station  -- de naam van een station (str)
 
     Retourneert het rangnummer van het station of -1 als het station niet op het traject voorkomt.
