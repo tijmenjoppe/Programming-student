@@ -196,7 +196,7 @@ if __name__ == '__main__':
         test_kluis_teruggeven()
         print("Je functie kluis_teruggeven() doorstaat de tests!")
 
-        print("\nJe mag deze opdracht nu inleveren op Canvas... ")
+        print("\nJe mag deze opdracht nu inleveren op Canvas... Goed werk!")
 
     except AssertionError as ae:
         print("\x1b[0;31m")
