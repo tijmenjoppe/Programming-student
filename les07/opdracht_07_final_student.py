@@ -77,11 +77,11 @@ def test_kluis_uitgeven():
     res = kluis_uitgeven('a')
 
     assert type(res) == int, (
-        f"Fout: jouw functie kluis_openen() retourneert een {type(res)} in plaats van een int."
+        f"Fout: jouw functie kluis_uitgeven() retourneert een {type(res)} in plaats van een int."
     )
 
     assert res == -1, (
-        f"Fout: jouw functie kluis_openen() accepteert een incorrecte code {'a'}."
+        f"Fout: jouw functie kluis_uitgeven() accepteert een incorrecte code {'a'}."
     )
 
     cases = [('1;6754\n2;geheim\n3;kluisvanpietje\n4;z@terd@g\n', 5),
@@ -96,7 +96,7 @@ def test_kluis_uitgeven():
         res = kluis_uitgeven('test')
 
         assert type(res) == int, (
-            f"Fout: jouw functie kluis_openen() retourneert een {type(res)} in plaats van een int."
+            f"Fout: jouw functie kluis_uitgeven() retourneert een {type(res)} in plaats van een int."
         )
 
         assert res == case[1], (
