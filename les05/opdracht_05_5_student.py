@@ -1,10 +1,9 @@
 def kwadraten_som(grondgetallen):
     """Sommeert de kwadraten van gegeven *grondgetallen*."""
-    return 0
+    return
 
 
-"""
-========================================================================================================================
+"""==============================================[ HU TESTRAAMWERK ]====================================================
 Onderstaand staan de tests voor je code -- hieronder mag je niets wijzigen!
 Je kunt je code testen door deze file te runnen of met behulp van pytest.
 """

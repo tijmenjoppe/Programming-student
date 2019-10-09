@@ -1,18 +1,45 @@
-def standaardprijs(afstandKM):
-    """Bepaal de standaardprijs op basis van *afstandKM*."""
-    return 0.0
+def standaardprijs(afstand):
+    """
+    Berekent de standaardprijs van een treinreis.
+
+    Argumenten:
+    afstand -- de lengte van de reis in kilometers (int).
+
+    Retourneert de standaardprijs in euro (float).
+    """
+    return
 
 
-def ritprijs(leeftijd, weekendrit, afstandKM):
-    """Bepaal de ritprijs op basis van *leeftijd*, *weekendrit* en *afstandKM*."""
-    return 0.0
+def ritprijs(leeftijd, weekendrit, afstand):
+    """
+    Berekent de ritprijs van een treinreis.
+
+    Argumenten:
+    leeftijd -- de leeftijd van de reiziger (int)
+    weekendrit -- of er in het weekend wordt gereisd (bool)
+    afstand -- de lengte van de reis in kilometers (int)
+
+    Retourneert de ritprijs inclusief geldende kortingen in euro (float).
+    """
+    return
 
 
-"""
-========================================================================================================================
+# Het hoofdprogramma met de gebruikersinvoer.
+"""==============================================[ HU TESTRAAMWERK ]====================================================
 Onderstaand staan de tests voor je code -- hieronder mag je niets wijzigen!
 Je kunt je code testen door deze file te runnen of met behulp van pytest.
 """
+
+
+def test_standaardprijs():
+    cases = [(-10,  0.00),
+             (  0,  0.00),
+             ( 10,  8.00),
+             (100, 75.00)]
+
+    for case in cases:
+        assert round(standaardprijs(case[0]), 2) == round(case[1], 2),\
+            f"Fout: standaardprijs({case[0]}) geeft {standaardprijs(case[0])} in plaats van {case[1]}"
 
 
 def test_ritprijs():
@@ -54,9 +81,11 @@ if __name__ == '__main__':
     try:
         print("\x1b[0;32m")
 
+        test_standaardprijs()
+        print("Je functie standaardprijs() doorstaat de tests!")
+
         test_ritprijs()
         print("Je functie ritprijs() doorstaat de tests! Je mag deze opdracht nu inleveren op Canvas... ")
 
     except AssertionError as ae:
-        print("\x1b[0;31m" + str(ae))
-
+        print("\x1b[0;31m\n" + str(ae))

@@ -1,6 +1,6 @@
 def aantal_kluizen_vrij():
-    """ Retourneert het aantal beschikbare kluizen (int). """
-    pass
+    """Retourneert het aantal beschikbare kluizen (int)."""
+    return
 
 
 def kluis_uitgeven(code):
@@ -12,7 +12,7 @@ def kluis_uitgeven(code):
 
     Retourneert het kluisnummer (int) dat is uitgegeven of -1 als het uitgeven van een kluis is mislukt.
     """
-    pass
+    return
 
 
 def kluis_openen(kluisnummer, code):
@@ -25,7 +25,7 @@ def kluis_openen(kluisnummer, code):
 
     Retourneert True als de kluis geopend kon worden, anders False.
     """
-    pass
+    return
 
 
 def kluis_teruggeven(kluisnummer, code):
@@ -38,7 +38,7 @@ def kluis_teruggeven(kluisnummer, code):
 
     Retourneert True als de kluis teruggegeven kon worden, anders False.
     """
-    pass
+    return
 
 
 """
@@ -47,10 +47,7 @@ Het hoofdprogramma met het menu.
 print("================= Menu =================")
 
 
-
-
-
-"""====================================================[ TEST ]=========================================================
+"""==============================================[ HU TESTRAAMWERK ]====================================================
 Onderstaand staan de tests voor je code -- hieronder mag je niets wijzigen!
 Je kunt je code testen door deze file te runnen of met behulp van pytest.
 """
@@ -107,8 +104,8 @@ def test_kluis_uitgeven():
 
         if res > 0:
             with open('kluizen.txt', 'r') as kluizen_db:
-                lines = kluizen_db.readlines()
-            assert str(case[1]) + ';test' in lines[-1], (
+                data = kluizen_db.read()
+            assert str(case[1]) + ';test' in data, (
                 f"Fout: jouw functie kluis_uitgeven(code) slaat de uitgegeven kluis {case[1]}\n"
                 f"niet goed op in kluizen.txt, als deze de volgende inhoud zou bevatten:\n\n"
                 f"---[ kluizen.txt]---\n{case[0]}--------------------"

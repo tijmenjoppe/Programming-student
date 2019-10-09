@@ -1,10 +1,9 @@
-def som(getal1, getal2, getal3):
-    """Return de som van drie gegeven getallen."""
-    return 0
+def som(getallenlijst):
+    """Return de som van gegeven lijst *getallenlijst*."""
+    return
 
 
-"""
-========================================================================================================================
+"""==============================================[ HU TESTRAAMWERK ]====================================================
 Onderstaand staan de tests voor je code -- hieronder mag je niets wijzigen!
 Je kunt je code testen door deze file te runnen of met behulp van pytest.
 """
@@ -14,7 +13,7 @@ import random
 def test_som():
     for i in range(10):
         lst = random.sample(range(-9, 10), 3)
-        assert som(lst[0], lst[1], lst[2]) == sum(lst), "Fout: sum({},{},{}) geeft {} in plaats van {}".format(lst[0], lst[1], lst[2], som(lst[0], lst[1], lst[2]), sum(lst))
+        assert som(lst) == sum(lst), "Fout: sum({}) geeft {} in plaats van {}".format(lst, som(lst), sum(lst))
 
 
 if __name__ == '__main__':

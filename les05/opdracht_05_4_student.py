@@ -1,15 +1,17 @@
 def new_password(oldpassword, newpassword):
     """Controleer of *newpassword* voldoet aan de eisen om *oldpassword* te vervangen."""
-    return False
+    return
 
 
 def new_password2(oldpassword, newpassword):
-    """Controleer of *newpassword* voldoet aan de eisen om *oldpassword* te vervangen én minstens 1 cijfer bevat."""
-    return False
+    """
+    Controleer of *newpassword* voldoet aan de eisen om *oldpassword* te vervangen
+    én minstens 1 cijfer bevat.
+    """
+    return
 
 
-"""
-========================================================================================================================
+"""==============================================[ HU TESTRAAMWERK ]====================================================
 Onderstaand staan de tests voor je code -- hieronder mag je niets wijzigen!
 Je kunt je code testen door deze file te runnen of met behulp van pytest.
 """

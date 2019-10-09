@@ -1,12 +1,15 @@
-""" Schrijf (en test) de functie wijzig() met één parameter: letterlijst.
-    Zorg dat de functie de lijst leegt en de letters [ ‘d’, ‘e’, ‘f’ ] toevoegt. """
+""" Schrijf (en test) de functie wijzig() met één parameter: lst.
+    Zorg dat de functie de lijst lst en de letters [ ‘d’, ‘e’, ‘f’ ] toevoegt. """
+def wijzig(lst):
+    return
 
-def wijzig(letterlijst):
-	pass
+
+# 1. Waarom kun je in de functie niet de opdracht lijst = ['d', 'e', 'f'] geven?
+# 2. Werkt jouw functie ook met een string-parameter? Probeer dit! Waarom werkt het wel/niet?
+# 3. Welke rol speelt (im)mutabiliteit in deze vraag?
 
 
-"""
-=======================================================[ TEST ]=========================================================
+"""==============================================[ HU TESTRAAMWERK ]====================================================
 Onderstaand staan de tests voor je code -- hieronder mag je niets wijzigen!
 Je kunt je code testen door deze file te runnen of met behulp van pytest.
 """
